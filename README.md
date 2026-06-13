@@ -1,4 +1,4 @@
-# 📊 Customer Behavior Analytics & Churn Prediction Dashboard
+# Customer Behavior Analytics & Churn Prediction Dashboard
 
 > **Teyzix Core Internship — June Batch**
 >  Domain: Machine Learning | Difficulty: Intermediate
@@ -94,7 +94,7 @@ Then open your browser at: `http://localhost:8501`
 
 ---
 
-## 📊 Dashboard Pages
+## Dashboard Pages
 
 | Page | Description |
 |------|-------------|
@@ -114,18 +114,18 @@ Then open your browser at: `http://localhost:8501`
 
 ---
 
-## 🤖 Models Used
+## Models Used
 
 | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
 |-------|----------|-----------|--------|----------|---------|
 | Logistic Regression | 0.8357 | 0.7033 | 0.5269 | 0.6025 | 0.8517 |
 | Random Forest | 0.8180 | 0.6684 | 0.4552 | 0.5416 | 0.8247 |
 
-> ✅ **Logistic Regression** performed better on this dataset and is used for dashboard predictions.
+> **Logistic Regression** performed better on this dataset and is used for dashboard predictions.
 
 ---
 
-## 🔍 Risk Categories
+## Risk Categories
 
 | Category | Churn Probability |
 |----------|-------------------|
