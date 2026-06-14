@@ -79,7 +79,7 @@ def load_models():
     return rf, lr, scaler
 
 if not os.path.exists(MODEL_DIR):
-    st.error("❌ 'models/' folder not present, run notebook first.")
+    st.error(" 'models/' folder not present, run notebook first.")
     st.stop()
 
 rf, lr, scaler = load_models()
@@ -162,7 +162,7 @@ if page == "Overview":
         if df is not None and 'Churn' in df.columns:
             churned    = int(df['Churn'].sum()) if 'Churn' in df.columns else 0
             churn_rate = churned / total * 100
-            st.info(f"📌 Actual Churn in this file: **{churned}** customers ({churn_rate:.1f}%)")
+            st.info(f"Actual Churn in this file: **{churned}** customers ({churn_rate:.1f}%)")
     
         st.markdown("---")
         col1, col2 = st.columns(2)
@@ -194,7 +194,7 @@ if page == "Overview":
             st.markdown("---")
             rev_at_risk = df[df['RiskCategory'] == 'High Risk']['MonthlyCharges'].sum()
             total_rev   = df['MonthlyCharges'].sum()
-            st.markdown(f"💰 **Revenue at Risk:** ${rev_at_risk:,.2f} / ${total_rev:,.2f} total "
+            st.markdown(f" **Revenue at Risk:** ${rev_at_risk:,.2f} / ${total_rev:,.2f} total "
                         f"({rev_at_risk/total_rev*100:.1f}%)")
     
     
@@ -257,7 +257,7 @@ elif page == "Visualizations":
 # PAGE 3 — PREDICT CUSTOMERS
 # ══════════════════════════════════════════════
 elif page == "Predict Customers":
-    st.title("🔍 Customer Churn Predictions")
+    st.title("Customer Churn Predictions")
 
     tab1, tab2 = st.tabs(["📋 All Customers (CSV)", "👤 Single Customer"])
 
