@@ -1,0 +1,11 @@
+# Dataset
+data/
+
+# Trained models
+models/
+
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
